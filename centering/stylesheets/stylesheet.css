@@ -25,3 +25,26 @@ html {
 html, body {
   background-color: #F3F781;
 }
+
+p {
+  padding: 5px;
+  margin: 0 auto;
+  color: #FF4000;
+}
+
+#big-box {
+  overflow-y: scroll;
+  padding: 30px;
+  margin: 10px auto;
+  height: 400px;
+  width: 600px;
+  background-color: #A9E2F3;
+}
+
+.inner-boxes {
+  padding: 30px;
+  margin: 10px auto;
+  height: 200px;
+  width: 300px;
+  background-color: #81F781;
+}
