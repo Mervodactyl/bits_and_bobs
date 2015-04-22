@@ -28,23 +28,40 @@ html, body {
 
 p {
   padding: 5px;
-  margin: 0 auto;
+  text-align: center;
   color: #FF4000;
+  border-radius: 20px;
+  background-color: white;
+  border: 3px solid black;
 }
 
 #big-box {
   overflow-y: scroll;
-  padding: 30px;
-  margin: 10px auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10%;
   height: 400px;
-  width: 600px;
+  width: 60%;
+  border-radius: 20px;
   background-color: #A9E2F3;
+  border: 3px solid black;
 }
+  #big-box p {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 
 .inner-boxes {
   padding: 30px;
   margin: 10px auto;
   height: 200px;
-  width: 300px;
+  width: 60%;
+  border-radius: 50px;
   background-color: #81F781;
+  border: 3px solid black;
 }
+  #big-box .inner-boxes p {
+    margin-top: 10%;
+    margin-bottom: 15%;
+    vertical-align: middle;
+  }
