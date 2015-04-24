@@ -1,0 +1,158 @@
+/* CSS Stylesheet - 'Frontend/ex1/list1.html' */
+
+/*Standard size
+=============================================================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Herculanum", sans-serif;
+}
+
+header {
+  padding: 1%;
+  margin: 0;
+  background-color: #f3ebd7;
+}
+
+h1 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+  font-size: 5.2em;
+  border: 0px 0px 3px 0px solid red;
+}
+
+header p {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.35em;
+  font-size: 1.9em;
+}
+
+.nation {
+  padding: 1%;
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+
+h3 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+h2 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+}
+
+.first_list, .second_list {
+  width: 50%;
+  height: 60%;
+  padding: 1%;
+  margin: 0;
+  float: left;
+}
+
+.list_header {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.nation ul {
+  padding: 1% 6% 6% 30%;
+  margin: 0;
+  text-align: left;
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.3em;
+  font-size: 1.2em;
+  list-style-type: georgian;
+}
+
+ol {
+  padding: 1% 6% 6% 30%;
+  margin: 0;
+  text-align: left;
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.3em;
+  font-size: 1.2em;
+  list-style-type: armenian;
+}
+
+#fire {
+  background-color: #F0D769;
+}
+
+#air {
+  background-color: green;
+}
+
+#water {
+  background-color: yellow;
+}
+
+#earth {
+  background-color: orange;
+}
+
+footer {
+  height: 25%;
+  clear: left;
+  padding: 6px;
+  margin-bottom: 0;
+  background-color: #e1cc9a;
+}
+
+#links {
+  display: table;
+  padding: 4% 0%;
+  margin: 0 auto;
+}
+
+ul#horizontal-list {
+  padding: 5px;
+  width: 101%;
+  margin: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  }
+  ul#horizontal-list li {
+    display: inline;
+    padding: 4px;
+    background-color: white;
+    }
+    ul#horizontal-list li.ref-links {
+      margin-right: -4px;
+    }
+
+/*Tablet size
+=============================================================================*/
+
+@media all and (min-width: 1001px) {
+
+}

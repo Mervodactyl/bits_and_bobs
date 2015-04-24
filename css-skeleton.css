@@ -1,0 +1,121 @@
+CSS Skeleton
+============
+/*<style type="text/css">*/
+
+/* Comments: */
+/*
+* Place them on a new line ABOVE their subject
+* Line-length should be a maximum of about 80 columns
+*
+* Multiline comments should look just so
+*
+* TODO: This todo statement describes work to be completed at a later date
+*
+*/
+
+/* FONTS
+============================================================================ */
+/* You can add a font in 3 ways:
+*
+* @import : added to the TOP of the CSS doc :
+* eg @import url(http://fonts.googleapis.com/css?family=Oswald);
+*
+* link : added to the HTML doc in the <head></head> element :
+* eg <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+*
+* JavaScript : RARElY USED
+*/
+
+
+
+/* Begin each page with the cross browser box-sizing rule: */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* This denotes the order to each CSS selector */
+
+.selector {
+  /* Positioning */
+  position: ;
+  z-index: ;
+  top: ;
+  right: ;
+
+  /* Display & Box-Model */
+  display: ;
+  overflow: ;
+  width: ;
+  height: ;
+  padding: ;
+  border: ;
+  margin; ;
+
+  /* Color */
+  background: ;
+  color: ;
+
+  /* Text */
+  font-family: ;
+  font-size: ;
+  line-height: ;
+  text-align: ;
+
+  /* Other */
+  cursor: pointer;
+}
+
+/* 3 Measurements
+=============================================================================*/
+/*
+*   % |   px |   em
+*/
+
+/* Font
+=============================================================================*/
+/*
+* font: [font-stretch] [font-style] [font-variant] [font-weight]
+* [font-size]/[line-height] [font-family];
+*/
+
+/* Media Queries [They are what make responsive design possible]
+=============================================================================*/
+
+/*Start with the standard design - the largest format*/
+#sidebar ul li a {
+  color: #900;
+  text-decoration: none;
+  padding: 3px 0;
+  display: block;
+}
+
+/*Then begin downsizing with potential screen sizes*/
+@media all and (min-width: 1001px) {
+  #sidebar ul li a:after {
+    content: " (" attr(data-email) ")";
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+  }
+}
+/*This one and the above ALTER/ EDIT the original design*/
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #sidebar ul li a:before {
+    content: "Email: ";
+    font-style: italic;
+    color: #666;
+  }
+}
+
+/* This one OVERRIDES the original design, most cases the smallest design has to
+* deviate too much and it is juest easier to 'make a new one'
+*/
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #sidebar ul li a {
+    padding-left: 21px;
+    background: url(../images/email.png) left center no-repeat;
+  }
+}
