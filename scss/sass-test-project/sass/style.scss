@@ -1,0 +1,43 @@
+//  SCSS stylesheet for: 'https://github.com/Mervodactyl/bits_and_bobs/scss.git'
+//   <style type="text/css">
+@import "variables";
+@import "mixins";
+
+*, *::before, *::after {
+  @include border-box
+}
+
+body {
+  background-color: $blue;
+}
+
+h1 {
+  text-align: right;
+  padding: 20px;
+  margin: 0 3% 0 0;
+}
+
+header {
+  @include small-border;
+  @include font-style;
+  background-color: $lilac;
+  margin: 0 0 2% 0;
+  h2 {
+    padding: 10px;
+    margin: 0 0 0 3%;
+  }
+}
+
+main {
+  @include border;
+  @include font-style;
+   h2 {
+    background-color: $lilac;
+    @include padding-margin-text;
+    @include small-border;
+  }
+    p {
+      background-color: $bluer;
+      @include padding-margin-text
+    }
+}

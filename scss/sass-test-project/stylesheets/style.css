@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #00BFFF; }
+
+h1 {
+  text-align: right;
+  padding: 20px;
+  margin: 0 3% 0 0; }
+
+header {
+  border: 3px dashed black;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #BCA9F5;
+  margin: 0 0 2% 0; }
+  header h2 {
+    padding: 10px;
+    margin: 0 0 0 3%; }
+
+main {
+  border: 7px solid black;
+  font-family: Verdana, Arial, sans-serif; }
+  main h2 {
+    background-color: #BCA9F5;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+    border: 3px dashed black; }
+  main p {
+    background-color: #81F7F3;
+    padding: 2%;
+    margin: 1%;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

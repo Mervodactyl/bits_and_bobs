@@ -1,0 +1,24 @@
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin padding-margin-text {
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+}
+
+@mixin border {
+  border: 7px solid black;
+}
+
+@mixin small-border {
+  border: 3px dashed black;
+}
+
+@mixin font-style {
+  font-family: Verdana, Arial, sans-serif;
+}
