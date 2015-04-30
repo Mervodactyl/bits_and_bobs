@@ -1,5 +1,7 @@
 //  SCSS stylesheet for: 'https://github.com/Mervodactyl/bits_and_bobs/scss.git'
-//   <style type="text/css">
+//  <style type="text/scss">
+
+
 @import "variables";
 @import "mixins";
 
@@ -30,14 +32,23 @@ header {
 
 main {
   @include border;
+  @include border-radius;
   @include font-style;
    h2 {
     background-color: $lilac;
     @include padding-margin-text;
     @include small-border;
   }
-    p {
-      background-color: $bluer;
-      @include padding-margin-text
+  p {
+    @include padding-margin-text;
+    background-color: $bluer;
+  }
+  #highlights {
+    color: $bluer + 100;
+    span {
+      color: $lilac + 100;
+      background-color: $lilac;
+      @include border-radius(10px)
     }
+  }
 }

@@ -22,3 +22,9 @@
 @mixin font-style {
   font-family: Verdana, Arial, sans-serif;
 }
+
+@mixin border-radius($radius: 20px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
