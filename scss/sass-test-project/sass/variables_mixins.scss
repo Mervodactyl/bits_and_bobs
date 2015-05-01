@@ -1,0 +1,66 @@
+// variables
+//===========================================================================//
+
+$bluer: #81F7F3;
+
+$blue: #00BFFF;
+
+$lilac: #BCA9F5;
+
+// mixins
+//===========================================================================//
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin padding-margin-text {
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+}
+
+@mixin border {
+  border: 7px solid black;
+}
+
+@mixin small-border {
+  border: 3px dashed black;
+}
+
+@mixin font-style {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+@mixin border-radius($radius: 20px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circle($width, $color) {
+  border: 3px solid black;
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+  -moz-border-radius: $width/2;
+  border-radius: $width/2;
+}
+
+@mixin triangle($width, $direction, $color) {
+  @if $direction == up {
+    width: 0;
+    height: 0;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $width solid $color;
+  } @else if $direction == down {
+    width: 0;
+    height: 0;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+  }
+}

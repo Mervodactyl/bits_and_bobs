@@ -2,8 +2,7 @@
 //  <style type="text/scss">
 
 
-@import "variables";
-@import "mixins";
+@import "variables_mixins";
 
 *, *::before, *::after {
   @include border-box
@@ -51,4 +50,27 @@ main {
       @include border-radius(10px)
     }
   }
+}
+
+.shape-section {
+  padding: 25px;
+  margin: 0 44%;
+  #circle {
+    padding: 10px;
+    z-index: 0;
+    @include circle(150px, #F781F3);
+  }
+  #triangle {
+    z-index: 1;
+    margin-top: 40px;
+    margin-left: 12px;
+    @include triangle(50px, down, #F6CEF5);
+  }
+}
+
+footer {
+  @extend main;
+  @include padding-margin-text;
+  margin: 10px 0 0 0;
+  color: yellow;
 }

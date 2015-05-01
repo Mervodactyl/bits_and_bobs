@@ -20,30 +20,60 @@ header {
     padding: 10px;
     margin: 0 0 0 3%; }
 
-main {
+main, footer {
   border: 7px solid black;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   font-family: Verdana, Arial, sans-serif; }
-  main h2 {
+  main h2, footer h2 {
     background-color: #BCA9F5;
     padding: 2%;
     margin: 1%;
     text-align: center;
     border: 3px dashed black; }
-  main p {
+  main p, footer p {
     padding: 2%;
     margin: 1%;
     text-align: center;
     background-color: #81F7F3; }
-  main #highlights {
+  main #highlights, footer #highlights {
     color: #e5ffff; }
-    main #highlights span {
+    main #highlights span, footer #highlights span {
       color: white;
       background-color: #BCA9F5;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px; }
+
+.shape-section {
+  padding: 25px;
+  margin: 0 44%; }
+  .shape-section #circle {
+    padding: 10px;
+    z-index: 0;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    background: #F781F3;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    border-radius: 75px; }
+  .shape-section #triangle {
+    z-index: 1;
+    margin-top: 40px;
+    margin-left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #F6CEF5; }
+
+footer {
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+  margin: 10px 0 0 0;
+  color: yellow; }
 
 /*# sourceMappingURL=style.css.map */
