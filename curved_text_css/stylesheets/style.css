@@ -1,0 +1,28 @@
+@import url('normalize.css');
+@import url('curved_text1.css');
+@import url('curved_text2.css');
+
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+              height: 100%;
+               width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+              /*margin: 0 0 0 0;*/
+}
+
+#block {
+  float: left;
+  height: 30%;
+  width: 30%;
+  background-color: blue;
+  border: 2px solid black;
+}
