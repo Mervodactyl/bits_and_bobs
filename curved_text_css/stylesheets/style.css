@@ -19,10 +19,21 @@ html {
               /*margin: 0 0 0 0;*/
 }
 
-#block {
+#contain {
+  margin-top: 15%;
+  margin-left: 18%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  height: 80%;
+  width: 80%;
+  background-color: pink;
+  border: 2px solid black;
+}
+
+/*#block {
   float: left;
   height: 30%;
   width: 30%;
   background-color: blue;
   border: 2px solid black;
-}
+}*/

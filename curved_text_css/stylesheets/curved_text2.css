@@ -1,14 +1,18 @@
 
 #warped2 {
-  float: left;
+  /*z-index: 1;*/
+  /*position: inline-block;*/
+  position: relative;
   display: block;
-  width: 20%;
-  height: 20%;
+  /*margin-left: 50%;
+  height: 500px;
+  width: 500px;
   background-color: red;
+    border: 2px solid black;*/
 }
 
 #warped2>span[class^=w]:nth-of-type(n+0) {
-  display: block;
+  display: inline-block;
   position: absolute;
   -moz-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;
